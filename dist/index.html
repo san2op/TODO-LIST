@@ -1,0 +1,79 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>To-Do Me</h1>
+  <span>Create new Project  <button id="newproject">NEW PROJECT</button></span>
+
+
+  <!-- task  or project -->
+
+
+<div class="newProjectForm">
+    <form action="" id="newproject-form" style="display: none;">
+        <label for="title">Title</label>
+        <input type="text" id="title">
+        <label for="description">Description</label>
+        <input type="text" id="description">
+        <label for="priority">Priority</label>
+        <label for="duedate">DueDate</label>
+        <input type="date" id="duedate">
+        <select type="text" id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <label for="notes">Notes</label>
+        <input type="text" id="notes">
+        <label for="checklist">Status</label>
+        <input type="checkbox" id="checklist">
+        <input type="submit" value="Add Project" id="addproject">
+        
+  
+
+    
+
+</div>
+
+    <div id="task"></div>
+
+
+    <!-- to-do -->
+    
+       
+    <button class="addTodo"> Add More To-Do </button>
+        <div class="todo-form" style="display:none;">
+          <ul>
+            <li>
+              <button type="submit" class="todoSubmit">&plus;</button> 
+
+              <input  type="text" id="todoinput"   placeholder="add new to-do.....">
+
+              <label for="todoDate">DueDate</label>
+              <input type="date" id="todoDate">
+
+              <label for="todocheck">Status</label>
+              <input type="checkbox" id="todocheck" onclick="taskComplete(this)" class="check">
+
+            
+
+              <i class="trash" onclick="removeTask(this)"></i>
+            </li>
+          </ul>
+              
+          
+        </div>
+        <div id="todo"></div>
+      </form>
+     
+</body>
+</html>
